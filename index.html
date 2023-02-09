@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="navbar" id="myNavbar">
+          <a href="#home" class="logo">Career Services</a>
+
+          <a href="#job">Job Search</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#premium" class="premium">Premium Services</a>
+          <a href="#about">More</a>
+          <a href="login.html" class="button">Fresher Login</a>
+          <a href="register.html" class="button">Register</a>
+
+
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <br><br>
+        <div class="find">
+          <center>
+
+          <h1 >7000+Jobs!Find Better!Faster!</h1>
+          <br>
+
+          <div class="inner">
+            <ul>
+              <li><a href="#">All</a></li>
+              <li><a href="#">Work from home</a></li>
+              <li><a href="#">Contract based Jobs</a></li>
+              <li><a href="#">Fresher Jobs</a></li>
+            </ul>
+            <input type="text" placeholder="Search.." width="200px">
+            <button style="padding:3px;background: color #0000cd;border:2px solid #0000cd;"> Search </button>
+            <br>
+
+
+          </div>
+
+
+        </center>
+        </div>
+        <br>
+        <br>
+        <center>
+        <div class="slideshow-container" id="testimonials">
+
+          <div class="mySlides">
+            <q>Amazing startup experience</q>
+            <p class="author">- Fresh Works</p>
+          </div>
+
+          <div class="mySlides">
+            <q>Easy to access.</q>
+            <p class="author">- Oasis Infobyte</p>
+          </div>
+
+          <div class="mySlides">
+            <q>Helpful to hire deserving employees .</q>
+            <p class="author">- Deloitte</p>
+          </div>
+
+
+
+          </div>
+
+          <div class="dot-container" style="width:37.2%;">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
+        <br>
+        <br>
+        </center>
+        <hr>
+        <h3 id="job">Find Job Vacancies by</h2>
+
+        <table class="jobvacancies"  style="padding-left:40px;">
+          <tr>
+            <th>Skill</th>
+            <th>Location</th>
+            <th>Industry</th>
+            <th>Company</th>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>Chennai</td>
+            <td>Brigade Tech park</td>
+            <td>Fresh Works</td>
+          </tr>
+          <tr>
+            <td>Data Analyst</td>
+            <td>Pune</td>
+            <td>Tech Park</td>
+            <td>Mind tree</td>
+          </tr>
+          <tr>
+            <td>Developer</td>
+            <td>Hyderabad</td>
+            <td>IT park</td>
+            <td>Microsoft</td>
+          </tr>
+        </table>
+      </center>
+      <hr>
+      <h3 id="premium">Premium Services</h3>
+      <div style="padding-left:35px;">
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <h2>Resume Writing</h2>
+            <p>Premium Services like Resume Writing will be given practice ,so that the professional,either the experienced or the fresher will be able to attend the interview confidently.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h2>Creating Protfolio</h2>
+            <p>Premium Services like Portfolio creation will be given practice ,so that the professional,either the experienced or the fresher will be able to attend the interview confidently.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h2>communication skills</h2>
+            <p>Premium Services like communication skills will be given practice ,so that the professional,either the experienced or the fresher will be able to attend the interview confidently.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <footer style="padding:10px;"> 
+          Designed by Priyanka
+        </footer>
+  <script>
+          function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar" || x.className == "button") {
+              x.className += " responsive";
+            } 
+          }
+
+          var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+}
+          </script>
+
+
+    </body>
+
+</html>

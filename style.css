@@ -1,0 +1,258 @@
+*{
+    padding: 1px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:Arial;
+}
+
+
+.navbar{ 
+  display: block;
+  line-height: 80px;
+}
+
+
+.navbar a
+{ 
+
+  color: black;
+  font-size: 17px;
+  padding-right: 20px;
+}
+
+.navbar a.logo{
+
+  font-size: x-large;
+  line-height: 80px;
+  padding: 0 80px;
+  color: blue;
+  flex: 1;
+
+} 
+
+li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 0 5px;
+
+}
+
+a.premium
+{
+color:orange;
+font-weight:bold;
+background-color: rgba(252,184,39,.3);
+padding:7px;
+margin-right:20px;
+border-radius: 4px;
+}
+
+a.button
+{
+    border-radius: 3px;
+    border : 2px solid black;
+    padding: 7px 20px;
+
+}
+
+.find{
+
+  background-color: #0000cd;
+  height:400px;
+  color: white;
+  line-height : 50px;
+
+
+}
+
+.inner{
+border: 2px solid ;
+background-color: rgba(0,0,0,.5);
+width: auto;
+height: auto;
+display: inline-block;
+margin-left: 30px;
+}
+
+
+
+.first, .second{ 
+  background-color: aliceblue;
+  width: 200px; 
+  height: auto;
+  float: right;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+
+}
+
+
+.inner ul a {
+color:white;
+}
+
+input[type=text] {
+
+  padding: 6px;
+  border: none;
+  margin-top: 2px;
+  font-size: 17px;
+}
+
+.navbar .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 1230px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 1230px) {
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 2px;
+      width: 300px;
+      line-height: 40px;
+
+    }
+    .navbar.responsive.button{ 
+      border-style: none;
+    }
+  }
+
+  .slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 40%;
+    align-self: center;
+  }
+
+
+  .mySlides {
+    display: none;
+    padding: 70px;
+    text-align: center;
+  }
+
+
+
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+  q {font-style: italic;
+  }
+
+
+
+  .jobvacancies table
+  {   
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  .jobvacancies th, .jobvacancies td
+  { 
+    text-align: left;
+    padding: 16px;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .content {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+  }
+
+  h3{
+
+    font-size: x-large;
+    line-height: 80px;
+    padding: 0 80px;
+
+    color: blue;
+    flex: 1;
+
+  } 
+
+  footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+ }
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

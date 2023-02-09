@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Register</title>
+      <link rel="stylesheet" href="style.css">
+          <style>
+            body, html {
+              height: 100%;
+              font-family: 'Times New Roman', Times, serif;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .bg-img {
+
+              background-color: #0000cd;
+
+              min-height: 380px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+              height: auto;
+            }
+
+            .container {
+              position: absolute;
+              margin: 20px;
+              max-width: 300px;
+              padding: 16px;
+              background-color: white;
+            }
+
+            input[type=text], input[type=password], input[type=email] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              border: none;
+              background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus , input[type=email]:focus{
+              background-color: #ddd;
+              outline: none;
+            }
+
+            .btn {
+              background-color: blue;
+              color: white;
+              padding: 16px 20px;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+
+            .btn:hover {
+              opacity: 1;
+            }
+            </style>
+
+   </head>
+   <body>
+
+<h2>Sign Up </h2>
+    <div class="bg-img">
+        <form class="container">
+            <div class="username">
+                <label for="firstName">First Name </label>
+                <input  type="text"  placeholder="First Name"  required/>
+            </div>
+            <div class="lastname">
+                <label  for="lastName">Last Name </label>
+                <input  type="text"  placeholder="LastName" required/>
+            </div>
+            <div class="email">
+                <label  for="email">Email </label>
+                <input  type="email"  placeholder="Email" required/>
+            </div>
+            <div class ="password">
+                <label  for="password">Password </label>
+                <input  type="password"    placeholder="Password" required/>
+            </div>
+            <div class ="confirm-password">
+                <label for="confirmPassword">Confirm Password </label>
+                <input  type="password"  placeholder="Confirm Password" required/>
+            </div>
+            <div class="footer">
+                <button  type="submit" class="btn" onclick= "location.href = 'index.html';">Register</button>
+            </div>
+            Have an account already? <a href="login.html">Login now</a>
+        </form>
+
+
+    </div>
+
+   </body>
+</html>
